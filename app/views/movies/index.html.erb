@@ -17,7 +17,7 @@
     <% @movies.each do |movie| %>
       <tr>
         <td><%= movie.title %></td>
-        <td><%= movie.genre %></td>
+        <td><%= movie.genre&.name %></td>
         <td><%= movie.number_in_stock %></td>
         <td><%= movie.daily_rental_rate %></td>
         <td><%= link_to 'Show', movie %></td>

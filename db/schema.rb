@@ -29,4 +29,5 @@ ActiveRecord::Schema.define(version: 2019_09_28_150750) do
     t.index ["title"], name: "index_movies_on_title"
   end
 
+  add_foreign_key "movies", "genres"
 end

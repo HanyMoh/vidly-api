@@ -23,8 +23,8 @@ ActiveRecord::Schema.define(version: 2019_09_28_150750) do
   create_table "movies", force: :cascade do |t|
     t.string "title", limit: 255, null: false
     t.bigint "genre_id", null: false
-    t.integer "number_in_stock", null: false
-    t.decimal "daily_rental_rate", precision: 3, scale: 1, null: false
+    t.integer "numberInStock", null: false
+    t.decimal "dailyRentalRate", precision: 3, scale: 1, null: false
     t.index ["genre_id"], name: "index_movies_on_genre_id"
     t.index ["title"], name: "index_movies_on_title"
   end
